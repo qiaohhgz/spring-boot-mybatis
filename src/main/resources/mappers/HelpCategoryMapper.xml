@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yundian.mapper.HelpCategoryMapper">
+  <resultMap id="BaseResultMap" type="com.yundian.entity.HelpCategory">
+    <id column="help_category_id" jdbcType="SMALLINT" property="helpCategoryId" />
+    <result column="name" jdbcType="CHAR" property="name" />
+    <result column="parent_category_id" jdbcType="SMALLINT" property="parentCategoryId" />
+    <result column="url" jdbcType="CHAR" property="url" />
+  </resultMap>
+  <select id="selectList" resultMap="BaseResultMap">
+    select help_category_id, name, parent_category_id, url from help_category
+  </select>
+</mapper>
