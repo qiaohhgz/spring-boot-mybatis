@@ -12,7 +12,7 @@
     </settings>
     <plugins>
         <plugin interceptor="com.github.pagehelper.PageHelper">
-            <property name="dialect" value="sqlserver"/>
+            <property name="dialect" value="mysql"/>
         </plugin>
     </plugins>
     <mappers>

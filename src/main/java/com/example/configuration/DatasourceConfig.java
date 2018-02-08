@@ -1,4 +1,4 @@
-package com.yundian.configuration;
+package com.example.configuration;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -15,7 +15,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = "com.yundian.mapper")
+@MapperScan(basePackages = "com.example.mapper")
 public class DatasourceConfig {
     private static Logger log = LoggerFactory.getLogger(DatasourceConfig.class);
     @Value("${druid.driver}")

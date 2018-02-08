@@ -1,4 +1,4 @@
-package com.yundian.entity;
+package com.example.model;
 
 public class HelpCategory {
     private Short helpCategoryId;
